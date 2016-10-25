@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+
+  "name": "Dir to field",
+  "description": "Reads the name of the newest directory in another directory to put that name in a webform field.",
+  "version": "0.1",
+  
+  "options_page": "options.html",
+  
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "content_scripts": [ 
+	{
+	  "matches": ["<all_urls>"],
+	  "js": ["moment.min.js", "form-injector.js"]
+	}
+  ],
+	
+  "icons": {
+    "128":"icon.png" 
+  }, 
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  
+  "permissions": [
+    "activeTab",
+  	"storage",
+  	"file://*",
+  	"tabs"
+  ]
+  
+}

@@ -1,0 +1,25 @@
+#options body {
+	margin: 3em;
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+#options h1 {
+    float: left;
+	line-height: 2.5em;
+	margin-right: 1em;
+}
+
+#options #logo {
+    display: block;
+    float: left;
+}
+
+#options #form {
+	margin-top: 2em;
+	clear: both;
+}
+
+#options #form input {
+	margin-bottom: 1em;
+}
